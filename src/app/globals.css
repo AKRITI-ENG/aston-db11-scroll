@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+@theme {
+  --color-pagani-black: #1a1a1a;
+  --color-pagani-gold: #D4AF37;
+  --color-bright-gold: #FFD700;
+  --color-carbon-gray: #2a2a2a;
+  --font-orbitron: var(--font-orbitron);
+  --font-rajdhani: var(--font-rajdhani);
+}
+
+/* 
+  Tailwind v4 uses @theme to define variables. 
+  The above block extends the theme. 
+  
+  Note: If using standard Tailwind v4 alpha/beta, the syntax is slightly different or requires specific postcss config.
+  Assuming create-next-app installed compatible version or we need to align syntax.
+  For now, I'll use standard CSS variables for the color palette used in components 
+  which is compatible with both v3 and v4 if defined in :root, 
+  but v4 @theme is the new way.
+  
+  However, Next.js 'app-tw' template might have set up @tailwind directives.
+  I will replace everything with v4 syntax as requested.
+*/
+
+:root {
+  --pagani-black: #1a1a1a;
+  --pagani-gold: #D4AF37;
+  --bright-gold: #FFD700;
+  --carbon-gray: #2a2a2a;
+}
+
+body {
+  background-color: var(--pagani-black);
+  color: white;
+}
+
+/* Custom Utilities if needed, though Tailwind controls most */
