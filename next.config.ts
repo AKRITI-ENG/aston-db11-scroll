@@ -1,11 +1,10 @@
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
-  output: "export", // 👈 REQUIRED for Netlify static hosting
+const nextConfig = {
+  output: "export",
   images: {
-    unoptimized: true, // 👈 REQUIRED for static export
+    unoptimized: true,
   },
 };
 
 export default nextConfig;
+
 
